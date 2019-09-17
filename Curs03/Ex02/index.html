@@ -5,8 +5,28 @@
 </head>
 <body>
 
-  <form>
+<!-- Creeaza un formular pentru capturarea datelor de utilizator in care sa preiei datele utilizatorului, folosind tipurile de inputuri cunoscute pana acum 
+Formularul va avea urmatorii parametrii: 
+Nume (name -> name, placeholder -> Nume, required)
+Prenume (name -> surname, placeholder -> Prenume, required) 
+Email (name -> email, placeholder -> email@email.com, type -> email, required) 
+Telefon (name -> phone, type -> email, required) 
       
+  Adauga intre campurile de nume si cel de email un alt input pentru username, cu urmatorii parametrii
+Nume de utilizator (name -> username, type -> text, placeholder -> Nume de utilizator, maxlength -> 25, minlength -> 3)
+
+
+
+-->
+
+
+
+  <form>
+      <input name="name" placeholder="nume" required>
+      <input name="surname" placeholder="prenume" required>
+      <input name="nickName" placeholder="nume de utilizator" maxlength="25" minlenght="3" required>
+      <input name="email" placeholder="email@email.com" type="email" required>
+      <input name="phone" placeholder="telefon" type="tel" required>
     <button type="submit">Trimite</button>
   </form>
 
