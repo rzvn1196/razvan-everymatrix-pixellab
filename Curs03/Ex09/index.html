@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+        Creeaza un document HTML in care sa adaugi un formular  cu buton de submit si elemente label cu urmatoarele campuri
+    Nume (name -> name, minlength -> 5, maxlength -> 30, required)
+    Prenume (name -> surname, minlength -> 5, maxlength -> 30, required)
+    Mesaj (name -> message, cols -> 30, rows -> 4, required) 
+        Adauga inca un element textarea, care sa nu fie obligatoriu
+    Detalii (name -> details, cols -> 30, rows -> 8) -->
+
+    <label for="name">Nume</label>
+    <input name="name" type="text" id="name" minlenght="5" maxlenght="30" required><br>
+    <label for="surname">Prenume</label>
+    <input surname="surname" type="text" id="surname" minlenght="5" maxlenght="30" required><br>
+    <label for="message">Mesajul tau</label>
+    <input message="message" type="text" id="message" cols="30" rows="4" required><br>
+    <label for="details">Detalii</label>
+    <textarea id="details" name="details" cols="30" rows="8"></textarea>
+
+    
+</body>
+</html>
