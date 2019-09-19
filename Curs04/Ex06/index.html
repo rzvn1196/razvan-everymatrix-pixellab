@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Address</title>
+</head>
+<body>
+  
+  <h1>New Address</h1>
+
+  <img src="images/new_address.jpg">
+
+  <p>
+      <b>Please provide a valid address</b>, otherwise we will not be able to send your stuff.
+  </p>
+
+  <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+<br>
+
+  <h2>Useful links</h2>
+
+  <ul>
+    <li>
+      <a href="https://www.google.com/maps">https://www.google.com/maps</a>
+    </li>
+    <li>
+        <a href="https://www.coduripostale.com/">https://www.coduripostale.com/</a>
+    </li>
+  </ul>
+
+  <br>
+  <br>
+
+  <form>
+    <fieldset>
+      <legend>Address Information:</legend>
+
+      <p>Title: 
+        <label for="mr">Mr</label>
+          <input id="mr" type="radio" name="title" value="Mr" checked>
+        <label for="ms">Ms</label>
+          <input id="ms" type="radio" name="title" value="Ms">
+        <label for="unspecified">Unspecified</label>
+          <input id="unspecified" type="radio" name="title" value="Unspecified">
+
+
+          <br><br>
+                
+                <label for="name">*Name: </label>
+                  <input type="text" id="name" name="name" placeholder="Name" required>
+
+                  <br><br>
+
+                <label for="surname">*Surname: </label>
+                  <input type="text" id="surname" name="surname" placeholder="Surame" required>
+
+                  <br><br>
+
+                <label for="phone">*Phone: </label>
+                  <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+
+                  <br><br>
+
+                <label for="address">*Address Line 1: </label>
+                  <input type="text" id="address" name="address" placeholder="Address Line 1" required>
+
+                  <br><br>
+
+                <label for="addressTwo">Address Line 2: </label>
+                  <input type="text" id="addressTwo" name="addressTwo" placeholder="Address Line 2">
+
+                  <br><br>
+
+                <label for="city">*City: </label>
+                  <input type="text" id="city" name="city" placeholder="City" required>
+
+                  <br><br>
+
+                  *State :
+                <select>
+                    <option value="">State</option>
+                    <option value="Ontario">Romania</option>
+                    <option value="Quebec">France</option>
+                    <option value="Yukon">Germany</option>
+                    <option value="BritishColumbia">Poland</option>
+                </select>
+
+                <br><br>
+
+              <label for="postcode">*Postcode: </label>
+                <input type="text" id="postcode" name="postcode" placeholder="Placeholder" required>
+
+                <br><br>
+
+                <input type="checkbox" id="gdpr">
+              <label for="gdpr">GDPR generic consent?</label>
+
+      </p>
+
+      <button type="submit">Create account</button>
+      <button type="reset">Reset</button>
+
+    </fieldset>
+  </form>
+
+</body>
+</html>
