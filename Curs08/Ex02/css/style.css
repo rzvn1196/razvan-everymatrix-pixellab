@@ -1,0 +1,60 @@
+/* Dupa setarea fonturilor: Roboto (Italic, Regular, Bold) si Julius Sans
+Coloreaza elementele h1 rosu, aplica fontul Julius pe ele si seteaza-le o marime de 35px
+Aplica fontul Roboto Bold pe elemente b din paragrafe 
+Aplica fontul Roboto Regular pe elementul body astfel incat tot textul documentului sa foloseasca acest font 
+Aplica fontul Roboto Italic pe elementele em, coloreaza-le albastru si subliniaza-le 
+Aplica fontul Roboto Bold pe ancorele aflate in liste ordonate 
+Aplica fontul Julius pe elementele li ale listelor neordonate si seteaza-le line-height de 25
+Aplica fontul Roboto Bold elemente h3, coloreaza-le verde si seteaza-le o marime de 28px 
+Aplica fontul Julius pe elementele h2, coloreaza-le mov, subliniaza-le si seteaza-le o marime de 32px
+Aplica line-height de 23 pe paragrafele documentului
+ */
+
+ @font-face {
+  font-family: 'julius_sans_oneregular';
+  src: url('../fonts/juliussansone-regular-webfont.woff2') format('woff2'),
+       url('../fonts/juliussansone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ 
+
+
+
+@font-face {
+  font-family: 'robotobold';
+  src: url('roboto-bold-webfont.woff2') format('woff2'),
+       url('roboto-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'robotoitalic';
+  src: url('roboto-italic-webfont.woff2') format('woff2'),
+       url('roboto-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('roboto-regular-webfont.woff2') format('woff2'),
+       url('roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+ body {
+  font-family: 'julius_sans_oneregular';
+ }
