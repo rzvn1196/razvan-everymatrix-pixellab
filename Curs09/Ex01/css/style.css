@@ -1,3 +1,46 @@
 ul, ol {
   list-style-type: none;
 }
+
+/* In documentul din director, stileaza toate elementele cu clasa para astfel incat sa simuleze marginile si paddingul paragrafelor normale 
+Pentru toate elementele span din elementele cu clasa para, seteaza-le inline-block, si adauga un padding de 5px si o bordura de 1px rosie
+Seteaza elementele li a listei neordonate ca inline, astfel incat sa simuleze o linie de meniu 
+Stileaza toate elementele cu clasa para-large astfel incat sa simuleze paragrafe, dar marginile sa fie de 25 iar paddingul de 10 
+Seteaza toate elementele span din elementele cu clasa para-large inline-block si adauga-le un padding de 5px o bordura verde punctata de 2px si margini de 5px
+Seteaza elementele li a listei ordonate ca inline-block pentru a simula o linie de meniu. Adauga-le margin top si bottom de 15px
+ */
+
+ .para {
+   display:block;
+   margin-top:1em;
+   margin-bottom:1em;
+ }
+
+ .para span {
+   display:inline-block;
+   padding:5px;
+   border:1px solid red;
+ }
+
+ ul li {
+   display:inline;
+ }
+
+ .para-large {
+   display:block;
+   margin:25px;
+   padding:10px;
+ }
+
+ .para-large span {
+   display:inline-block;
+   padding:5px;
+   border:2px dotted green;
+   margin:5px;
+ }
+
+ ol li {
+   display:inline-block;
+   margin-top:15px;
+   margin-bottom:15px;
+ }

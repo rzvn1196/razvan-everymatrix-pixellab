@@ -1,0 +1,35 @@
+/* Creaza un div cu clasa purple si fundalul mov, bordura de 2 px punctata verde, colturile rotunjite de 40 cu valorile 20 pentru padding si un box shadow de 5px 5px 5px de culoare maro
+Creaza un div cu clasa turquoise si fundalul turcoaz, bordura albastra de 1px, colturile rotunjite de 15, un box shadow de 2px 2px 5px de culoare rosie si urmatoarele valori pentru padding: 
+padding-top, padding-bottom -> 11px
+padding-left, padding-right -> 20px
+Creaza un div cu clasa transparent, cu bordura rosie de 2px un box shadow de 10px 10px 5px de culoare gri, valorile pentru padding setate la 20 pentru toate partile, si pentru margin:
+margin-bottom, margin-top ->20px;
+margin-left, margin-right -> auto
+*/
+
+.purple {
+  background:purple;
+  border:2px dotted green;
+  border-radius:40px;
+  padding:20px;
+  box-shadow:5px 5px 5px brown;
+}
+
+.turqoise {
+  background:turquoise;
+  border:1px solid blue;
+  border-radius:15px;
+  box-shadow:2px 2px 5px red;
+  padding:11px;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.transparent {
+  border: 2px solid red;
+  box-shadow:10px 10px 5px grey;
+  padding:20px;
+  margin:20px;
+  margin-left:auto;
+  margin-right:auto;
+}

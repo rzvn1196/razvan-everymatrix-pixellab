@@ -21,3 +21,50 @@
   border: 1px solid red;
 }
 
+/* Folosind proprietatile flexbox, centreaza vertical si orizontal elementele din prima cutie
+Centreaza orizontal elementele din a doua cutie si pozitioneaza-le vertical pe bordura de jos folosind align-items: flex-end
+Aliniaza in cutia trei elementele in coltul din dreapta jos folosind align-items: flex-end si justify-content: flex-end
+Aliniaza elementul din cutia patru central pe verticala si pe bordura din dreapta pe orizontala folosind align-items: center si justify-content: flex-end 
+Aliniaza elementele din cutia cinci central pe verticala folosind align-items: center si folosind justify-content: space-around pentru orizontala
+Aliniaza elementele din cutia sase pe bordura de jos a cutiei folosind align-items: flex-end si folosind justify-content: space-between pentru orizontala
+Aliniaza elementele din cutia sapte pe bordura de sus folosind align-items: flex-start si folosind justify-content: space-evenly pentru orizontala
+ */
+
+.stage {
+  display:flex;
+}
+
+.stage-01 {
+  align-items:center;
+  justify-content:center;
+}
+
+.stage-02 {
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.stage-03 {
+  align-items:flex-end;
+  justify-content:flex-end;
+}
+
+.stage-04 {
+  align-items:center;
+  justify-content:flex-end;
+}
+
+.stage-05 {
+  align-items:center;
+  justify-content:space-around;
+}
+
+.stage-06 {
+  align-items:flex-end;
+  justify-content:space-between;
+}
+
+.stage-07 {
+  align-items:flex-start;
+  justify-content:space-evenly;
+}
