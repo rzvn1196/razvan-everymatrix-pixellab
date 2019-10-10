@@ -6,20 +6,57 @@
 
 .box-red {
   background-color: red;
+  transition: width 3s ease-in;
 }
 
 .box-green {
   background-color: green;
+  transition: 5s ease-in; 
 }
 
 .box-purple {
   background-color: purple;
+  transition:width 4s 1s ease-in-out;
 }
 
 .box-brown {
   background-color: brown;
+  transition: 4s ease-in;
 }
 
 .box-yellow {
   background-color: yellow;
+  transition:3s ease-in-out;
 }
+
+/* Folosind pseudo-clasa :hover, tranzitioneaza cutiile dupa cum urmeaza:
+Tranzitioneaza lungimea cutiei rosii de la valoarea initiala la 120px pentru trei secunde
+Roteste cutia verde 360 de grade si creste-i dimensiunile cu 5px pentru 5 secunde
+Tranzitioneaza lungimea si latimea cutiei mov pana la 100px peste 4 secunde cu functia ease si un delay de o secunda 
+Roteste cutia maro cu -180 de grade si scade-i dimensiunile cu 10 pixel pentru 4 secunde cu functia ease-in
+Tranzitioneaza cutia galbena cu functia transform scale(2) pe o perioada de 3 secunde cu functia ease-in-out
+ */
+
+ .box-red:hover {
+   width:120px;
+ }
+
+ .box-green:hover {
+   width:30px;
+   height:30px;
+   transform:rotate(360deg)
+ }
+
+ .box-purple:hover {
+   width:100px;
+ }
+
+ .box-brown:hover {
+   width:35px;
+   height:35px;
+   transform:rotate(-180deg)
+ }
+
+ .box-yellow:hover {
+   transform:scale(2)
+ }
