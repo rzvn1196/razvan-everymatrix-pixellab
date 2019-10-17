@@ -374,6 +374,16 @@ body {
   color:#707070;
 }
 
+.container {
+  width:1280px;
+  max-width:100%;
+  margin:0 auto;
+}
+
+.headerBottom {
+  text-align:center;
+}
+
 .navMain li {
   display: inline-block;
   margin:0 5px;
@@ -389,4 +399,58 @@ body {
 .navMain a:hover {
   background-color:#ff6b6b;
   color:white;
+}
+
+.navBottom {
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.navBottom ul {
+  display:inline-block;
+}
+
+.navBottom li {
+  display:inline-block;
+  margin: 0 5px;
+}
+
+.navBottom a {
+  text-transform:uppercase;
+  font-size:14px;
+}
+
+.navBottom a:hover,
+.navBottom a.active {
+  color:#ff6b6b;
+}
+
+.main .container {
+  background:url('../images/banners/banner02.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.main .carousel .container {
+  min-height:570px;
+  color:white;
+  position:relative;
+}
+
+.main .carousel h1 {
+  font-family:'robotobold';
+  font-size:75px;
+  margin: 115px 0 0 0;
+  float:right;
+}
+
+.main .carousel .tagline {
+  clear:both;
+  text-align:right;
+}
+
+.main .carousel .small-print {
+  position:absolute;
+  bottom:0;
+  right:0;
+  text-align:right;
 }
