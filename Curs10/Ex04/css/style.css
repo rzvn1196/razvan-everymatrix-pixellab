@@ -1,1 +1,77 @@
+/* Coloreaza mov elementele b care se afle in paragrafe (descendenta)
+Subliniaza elementele i care se afla in listele neordonate (descendenta)
+Coloreaza elementele h2 care urmeaza imediat dupa h1, verzi (adiacenta) 
+Subliniaza cu o linie punctata rosie elementele h3 care urmeaza imediat dupa h2 si seteaza (folosind shorthand) marginea de sus la 8px. Restul marginilor trebuie sa ramana la fel. (adiacenta)
+Seteaza o bordura de 1px albastra si un padding de 5px in jurul elementelor h3 care urmeaza in document dupa un element ol (adiacenta generala)
+Seteaza o bordura de 1 px punctata, neagra si un padding de 20px in jurul elementelor p care urmeaza dupa elemente ul (adiacenta generala)
+Coloreaza maro elementele li care sunt descendenti directi ai listelor neordonate care sunt la randul lor descendenti directi ai listelor neordonate
+ */
 
+p > b {
+  color:purple;
+}
+
+ol > i {
+  text-decoration:underline;
+}
+
+h1 + h2 {
+  color:green;
+}
+
+h2 + h3 {
+  text-decoration:underline dotted red;
+  margin:8px 0 0 0;
+}
+
+ol ~ h3 {
+  border:1px solid blue;
+  padding: 5px;
+}
+
+ul ~ p {
+  border: 1px dotted black;
+  padding:20px;
+}
+
+ul > li > ul > li {
+  color: brown;
+}
+
+/* Coloreaza albastru elementele i care se afle in paragrafe (descendenta)
+Subliniaza elementele i care se afla in elementele cu clasa u-line (descendenta)
+Elimina marginea de sus pentru paragrafele care se afla imediat dupa elemente h3 (adiacenta)
+Subliniaza elementele h2 care urmeaza imediat dupa elemente ol (adiacenta)
+Adauga un padding orizontal de 12 si unul vertical de 10 elementelor p care urmeaza dupa elementul cu clasa random (adiacenta generala)
+Coloreaza galben toate ancorele care se afla in elemente ce urmeaza dupa elementul cu clasa last-list (adiacenta generala)
+Subliniaza elementele li care sunt descendenti directi ai listelor cu clasa my-list
+Adauga un padding de 5px (display: inline-block) tuturor ancorelor (si doar lor) care se afla in listele de nivel doi ale elementului cu clasa .nested
+ */
+
+ p > i {
+   color:blue;
+ }
+
+ .u-line > i {
+   text-decoration:underline;
+ }
+
+ h3 + p {
+   margin-top:0;
+ }
+
+ ol + h2 {
+   text-decoration: underline;
+ }
+
+ .random ~ p {
+   padding:12px 10px;
+ }
+
+ .last-list ~ a {
+   color:yellow;
+ }
+
+ .nested > li > ul > li > a {
+   padding:5px;
+ }

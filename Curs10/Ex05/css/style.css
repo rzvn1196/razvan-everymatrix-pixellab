@@ -1,0 +1,65 @@
+/* Elimina linia ancorelor primului element li de nivel 1 din clasa nested (:first-child) 
+Elimina linia ancorelor ultimului element li de nivel 2 din clasa nested (:first-child)
+Coloreaza fundalul galben pentru elemente li impare din lista elementul cu clasa last-list (:nth-child) 
+Coloreaza fundalul gri pentru al treilea element li de nivel 1 din elementele cu clasa my-list (:nth-child) 
+Coloreaza verde fiecare al patrulea element h3 din document (:nth-of-type) 
+Coloreaza albastru cu un fundal verde elementele impare de tip h2 din document (:nth-of-type)
+ */
+
+.nested > li:first-child > a {
+  text-decoration:none;
+}
+
+.nested > li > ul > li:last-child > a {
+  text-decoration:none;
+}
+
+.last-list > li:nth-of-type(odd) {
+  background-color:yellow;
+}
+
+.my-list > li:nth-child(3) {
+  background-color:grey;
+}
+
+h3:nth-of-type(4) {
+  color:green;
+}
+
+h2:nth-of-type(odd) {
+  color:blue;
+  background-color:green;
+}
+
+/* Subliniaza primele elemente li din listele neordonate cu clasa u-line (si doar din listele neordonate)  (:first-child)
+Subliniaza ultimele elemente li din toate listele neordonate (:last-child)
+Adauga o linie prin ancora celui de-al doilea element li din elementul cu clasa last-list (:nth-child) 
+Coloreaza mov toate cuvintele “Dolor” si doar ele din document, fara a adauga clase in plus (:nth-child) 
+Aplica un fundal maro si un padding orizontal de 15px pe paragrafele impare (:nth-of-type) 
+Inconjoara cu o bordura neagra de 1px  si un padding de 8px fiecare a 3-a lista neordonata de nivel superior din document. (:nth-of-type)
+ */
+
+ .u-line li:first-child {
+   text-decoration:underline;
+ }
+
+ ul li:last-child {
+   text-decoration:underline;
+ }
+
+ .last-list li:nth-child(2) {
+   text-decoration: line-through;
+ }
+
+ ul > li > ul > li:nth-child(3) {
+   color:purple;
+ }
+
+ p:nth-of-type(odd) {
+   background-color:brown;
+ }
+
+ body > ul:nth-child(3n) {
+   border: 1px solid black;
+   padding:8px;
+ }

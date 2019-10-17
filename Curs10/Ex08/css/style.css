@@ -1,0 +1,28 @@
+/* In documentul din director se afla un formular
+Pentru checkboxuri coloreaza elementul label verde atunci cand un checkbox este activat 
+Pentru grupul radio, coloreaza fundalul elementului label verde deschis cand sunt activate
+Pentru elementul select, coloreaza optiunea selectata cu rosu si textul bold 
+Pentru checkboxuri coloreaza elementul label roz deschis atunci cand checkboxul nu este activat 
+Pentru grupul radio, coloreaza fundalul elementului label roz deschis atunci cand nu sunt activate
+ */
+
+ input[type="checkbox"]:checked + label {
+   color:green;
+ }
+
+ input[type="radio"]:checked + label {
+   background-color:lightgreen;
+ }
+
+ select option:checked {
+   color:red;
+   font-weight:bold;
+ }
+
+ input[type="checkbox"] + label {
+   color:palevioletred;
+ }
+
+ input[type="radio"] + label {
+   background-color:palevioletred;
+ }

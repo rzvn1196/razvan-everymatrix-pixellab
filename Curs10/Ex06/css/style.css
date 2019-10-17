@@ -1,0 +1,45 @@
+/* In documentul din director aplica pe ancorele din lista cu clasa .main o stare de hover in care linia dispare
+Aplica pe fiecare a doua ancora din lista cu clasa .main o stare de hover in care culoarea se face rosie 
+Aplica pe elementul h1 o stare de hover in care acesta este subliniat 
+Aplica pe elementele i din paragrafe o stare de hover in care acestea sunt mutate cu 2px la dreapta si in sus atunci cand mouseul se afla pe paragraf
+Aplica pe ancorele din lista cu clasa .secondary o stare de hover in care linia se muta deasupra 
+Aplica pe ancorele impare din lista cu clasa .main o stare de hover in care acestea sa se faca verzi iar linia sa dispara complet 
+Aplica pe elementele b din paragafe o stare de hover in care acestea devin rosii si se muta cu 2px in sus
+ */
+
+ .main a:hover {
+  text-decoration:none;
+ }
+
+ .main li:nth-child(even) a:hover {
+   color:red;
+ }
+
+ h1 {
+   display:inline-block;
+ }
+
+ h1:hover {
+   text-decoration:underline;
+ }
+
+ p:hover i {
+   position:relative;
+   top:-2px;
+   left:-2px;
+ }
+
+ .secondary a:hover{
+   text-decoration:overline;
+ }
+
+ .main a:nth-of-type(odd):hover {
+   color:green;
+   text-decoration:none;
+ }
+
+ p b:hover {
+   color:red;
+   position:relative;
+   top:-2px;
+ }
