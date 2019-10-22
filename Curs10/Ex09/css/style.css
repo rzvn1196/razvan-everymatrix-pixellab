@@ -1,6 +1,21 @@
 /* add code here */
+/* In director se afla un fisier CSS cu niste reguli de CSS 
+Suprascrie in zona specificata acele reguli de CSS, astfel incat
+Titlul sa fie verde, subliniat si cu un padding de 5px 
+Paragraful sa aiba marimea fontului de 25px, italic si culoarea mov
+ */
 
+ h1 {
+   color:green !important;
+   text-decoration:underline;
+   padding:5px;
+ }
 
+ p {
+   font-size: 25px;
+   font-style:italic;
+   color:purple !important;
+ }
 
 /* add code here */
 
