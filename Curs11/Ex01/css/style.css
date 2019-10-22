@@ -32,6 +32,12 @@ body {
 
 
 @media (max-width: 576px) {
+  body {
+    padding:15px;
+  }
+  .box-1 {
+    display:none;
+  }
   .box-2 {
     display:none;
   }
@@ -42,13 +48,14 @@ body {
     color:white;
   }
   .box-3 {
-    border:1px solid green;
+    border-color: green;
   }
 }
 
 @media (max-width: 992px) {
   .box-4 {
     display:none;
+    color:black;
   }
   .box-3 {
     display:none;
@@ -62,18 +69,33 @@ body {
 }
 
 @media (min-width:992px) {
+  .box-2 {
+    color:white;
+    border-color:white;
+  }
   .box-4 {
     color:red;
   }
 }
 
-h1 {
+body > h1 {
   display:none;
 }
 
-@media (min-width:600px),(max-width:1200px) {
-  h1 {
-    display: inline;
+@media (min-width:600px) and (max-width:1200px) {
+  body > h1 {
+    left:0px;
+    display:block;
+  }
+}
+
+h2 {
+  display:none;
+}
+
+@media (min-width:500px) and (max-width:1000px) {
+  h2 {
+    display:block;
   }
 }
 
@@ -89,3 +111,34 @@ Schimba textul casutei 4 in rosu pentru rezolutiile mai mari de 992px
 Adauga un media query care sa se aplice intre 600px si 1200 de px
 Adauga un element h1 in document, deasupra casutelor si afiseaza-l doar intre 600px si 1200px
  */
+/* Ascunde casuta 1 pentru rezolutiile mai mici de 576px
+Coloreaza bordura si textul casutei 2 albe pentru rezolutiile de pana in 992 
+Adauga un element h2 deasupra casutelor si afiseaza-l intre rezolutiile de 500px si 100px
+Micsoreaza la 15 paddingul de pe elementul body pentru rezolutiile de sub 576px 
+Creeaza un element h3 sub casute si afiseaza-l pentru rezolutiile MAI MARI de 576px (min-width)
+Coloreaza rosu acest nou element pentru rezolutiile mai mari de 1000px 
+Ascunde din nou elementul nou pentru rezolutiile mai mari de 1200px
+ */
+
+ h3 {
+   display:none;
+   bottom:0;
+ }
+
+ @media (min-width:576px) {
+   h3 {
+     display:block;
+   }
+ }
+
+ @media (min-width:1000px) {
+   h3 {
+     color:red;
+   }
+ }
+
+ @media (max-width:1200px) {
+   h3 {
+     display:none;
+   }
+ }
