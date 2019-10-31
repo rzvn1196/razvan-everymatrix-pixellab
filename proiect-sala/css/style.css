@@ -410,6 +410,66 @@ body {
   margin-bottom: 10px;
 }
 
+.header-top {
+  overflow:hidden;
+}
+
+.header-contact {
+  display:flex;
+  align-items:center;
+  float:left;
+} 
+
+.header-contact .icon {
+  display:inline-block;
+  padding-right:10px;
+  font-size:30px;
+  color:#FF6B6B;
+}
+
+.header-contact i {
+  transform: rotate(-45deg);
+}
+
+.user-controls {
+  float:right;
+  display:flex;
+  align-items:center;
+  margin:10px;
+}
+
+.user-controls .icon {
+  font-size:20px;
+  display:inline-block;
+  margin-left:5px;
+}
+
+.user-controls .cart {
+  display:inline-block;
+  margin-left:35px;
+}
+
+.user-controls .cart .icon {
+  font-size:32px;
+}
+
+.cart .cart-quantity {
+  background-color:#FF6B6B;
+  min-height:20px;
+  min-width:20px;
+  color:#fff;
+  padding:3px;
+  border-radius:20px;
+  display:inline-block;
+  text-align:center;
+  line-height:20px;
+  font-weight:bold;
+  position:relative;
+  left:-15px;
+  top:-17px;
+
+}
+
 .logo {
   text-align: center;
 }
@@ -708,7 +768,7 @@ body {
 }
 
 .footer-top {
-  min-height: 320px;
+  min-height: 230px;
   padding-top: 40px;
   background: url('../images/banners/2q12iv2u.jpg') #1B1927 no-repeat top right;
 }
@@ -735,6 +795,18 @@ body {
   margin-top: 60px;
 }
 
+.customer-support .icon {
+  font-size:30px;
+  color:#FF6B6B;
+  display:block;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.customer-support li:first-of-type i {
+  transform: rotate(-45deg);
+}
+
 .customer-support li {
   display: inline-block;
   margin-right: 20px;
@@ -744,7 +816,7 @@ body {
   float: left;
   width: 285px;
   color: #AEAEAE;
-  margin-left: 117px;
+  margin: 23px 0 0 117px;
 }
 
 .store-contact a[href^="tel"] {
